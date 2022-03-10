@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\DirectX">
+      <UniqueIdentifier>{367adcb8-96f8-4a09-a85e-aaf8542546a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\pcap">
+      <UniqueIdentifier>{a81678e6-662a-46c9-9a2b-6b778850afd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphic">
+      <UniqueIdentifier>{01e3c949-387d-4ded-b71f-c0311f4953c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphic\defaultskin">
+      <UniqueIdentifier>{7291884c-4758-487b-a7ac-d79a8f03c8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphic\skinmanager">
+      <UniqueIdentifier>{e7908848-7e8f-41c7-9bba-cc3663221f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\winpcap">
+      <UniqueIdentifier>{7d51bc36-bbaf-4e1f-8760-ac981c07bc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\sidecharm">
+      <UniqueIdentifier>{1763a91a-a210-4adb-9f89-aaabd3792939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphic\debug">
+      <UniqueIdentifier>{37249696-b0c4-429e-97e6-7c96f0c231a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\setting">
+      <UniqueIdentifier>{83958f06-cab7-4ad0-9737-38942d335cbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectX\lib\DX3D_11.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\Fps.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\Grstr.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\Inputmain.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\keycode.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\ntxps.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\ps.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\Sound.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\vs.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\lib\WICTextureLoader.h">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="pcap\packet.h">
+      <Filter>ソース ファイル\pcap</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic\graphicmain.h">
+      <Filter>ソース ファイル\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic\visobj.h">
+      <Filter>ソース ファイル\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic\skinmanager\skinmanager.h">
+      <Filter>ソース ファイル\graphic\skinmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic\defaultskin\defaultskin.h">
+      <Filter>ソース ファイル\graphic\defaultskin</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\remote-ext.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Win32-Extensions.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\bluetooth.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\bpf.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\namedb.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\pcap.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\sll.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\usb.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap\vlan.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\bittypes.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ip6_misc.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Packet32.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap-bpf.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap-namedb.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pcap-stdinc.h">
+      <Filter>ソース ファイル\winpcap</Filter>
+    </ClInclude>
+    <ClInclude Include="pcap\analysis.h">
+      <Filter>ソース ファイル\pcap</Filter>
+    </ClInclude>
+    <ClInclude Include="keyinput.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="sidecharm\charmmain.h">
+      <Filter>ソース ファイル\sidecharm</Filter>
+    </ClInclude>
+    <ClInclude Include="sidecharm\button.h">
+      <Filter>ソース ファイル\sidecharm</Filter>
+    </ClInclude>
+    <ClInclude Include="debug_code\debug.h">
+      <Filter>ソース ファイル\graphic\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="setting\setting.h">
+      <Filter>ソース ファイル\setting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\DX3D_11.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\Fps.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\Grstr.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\Inputmain.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\Sound.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\lib\WICTextureLoader.cpp">
+      <Filter>ソース ファイル\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap\packet.cpp">
+      <Filter>ソース ファイル\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic\graphicmain.cpp">
+      <Filter>ソース ファイル\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic\visobj.cpp">
+      <Filter>ソース ファイル\graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic\skinmanager\skinmanager.cpp">
+      <Filter>ソース ファイル\graphic\skinmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic\defaultskin\defaultskin.cpp">
+      <Filter>ソース ファイル\graphic\defaultskin</Filter>
+    </ClCompile>
+    <ClCompile Include="pcap\analysis.cpp">
+      <Filter>ソース ファイル\pcap</Filter>
+    </ClCompile>
+    <ClCompile Include="keyinput.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="sidecharm\charmmain.cpp">
+      <Filter>ソース ファイル\sidecharm</Filter>
+    </ClCompile>
+    <ClCompile Include="setting\setting.cpp">
+      <Filter>ソース ファイル\setting</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
