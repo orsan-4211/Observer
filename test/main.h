@@ -16,7 +16,7 @@
 
 #include "keyinput.h"
 
-#define VERSION "Observer 2021.09.0003"
+#define VERSION "Observer 2021.09.0003b"
 
 #define FPS_LIMIT 60.0 / 60.0
 

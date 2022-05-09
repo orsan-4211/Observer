@@ -85,7 +85,6 @@
     <ClCompile Include="pcap\packet.cpp" />
     <ClCompile Include="setting\setting.cpp" />
     <ClCompile Include="sidecharm\charmmain.cpp" />
-    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9946579C-C476-4745-A8D4-4216FBFE40E1}</ProjectGuid>

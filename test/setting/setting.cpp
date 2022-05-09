@@ -87,6 +87,7 @@ void Ne_FileCheck(int id) {
 	//mbstowcs_s(&leng, nefilename[id].filenamebuff, sizeof(nefilename[id].filenamebuff), cfgpathbuff, 260);
 	
 	WideCharToMultiByte(CP_ACP, 0, nefilename[id].filenamebuff, -1, cfgpathbuff, sizeof(cfgpathbuff), NULL, NULL);
+
 	sprintf_s(cfgopenpathbuff, "config/%s", cfgpathbuff);
 	fopen_s(&fp, cfgopenpathbuff, "r");
 
@@ -186,7 +187,7 @@ void Ne_Select() {
 		&& (view.Height / 2 - (22 * (nefilecount / 2.0))) + (22 * nefileselect) - 11 <= dms.pos.y
 		&& (view.Height / 2 - (22 * (nefilecount / 2.0))) + (22 * nefileselect) + 11 >= dms.pos.y) {
 		deviceselected = 0;
-		if (deviceselected >= 0) {
+		if (deviceselected >= 0 && nefileselect >= 0) {
 			Ne_FileCheck(nefileselect);
 		}
 	}
