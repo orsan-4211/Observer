@@ -1838,18 +1838,6 @@ void areavset(Vertex vert[]) {
 	areadrcount++;
 }
 
-void markmove() {
-
-}
-
-void linemove() {
-
-}
-
-void packmove() {
-
-}
-
 void screenblur() {
 	drvert(screenvert, 20, screenind, 30, 24, 6, 0, screentex.view, &view);
 

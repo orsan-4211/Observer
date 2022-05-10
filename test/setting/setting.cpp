@@ -21,6 +21,7 @@ int nefileselect;
 void Ne_FileNameSet() {
 	nefilename = (necfgfilenameclass *)malloc(sizeof(necfgfilenameclass) * 1);
 	nefilecount = 0;
+	nefileselect = -1;
 }
 
 void Ne_FileNameFree() {
@@ -50,19 +51,25 @@ void Ne_FileNameCheck() {
 	hFind = FindFirstFile(nepathbuff, &fd);
 
 	if (hFind == INVALID_HANDLE_VALUE){
+		nefilecount = -1;
 	}
+	
+	if (nefilecount != -1) {
+		do {
+			if (strcmp((const char*)fd.cFileName, ".") == 0
+				|| strcmp((const char*)fd.cFileName, "..") == 0) {
+			}
+			else {
+				nefilename = (necfgfilenameclass *)realloc(nefilename, sizeof(necfgfilenameclass) * (nefilecount + 1));
+				wsprintf((LPWSTR)nefilename[nefilecount].filenamebuff, _T("%s"), fd.cFileName);
+				nefilecount++;
+			}
 
-	do{
-		if (strcmp((const char*)fd.cFileName, ".") == 0
-			|| strcmp((const char*)fd.cFileName, "..") == 0) {
-		}
-		else {
-			nefilename = (necfgfilenameclass *)realloc(nefilename, sizeof(necfgfilenameclass) * (nefilecount + 1));
-			wsprintf((LPWSTR)nefilename[nefilecount].filenamebuff, _T("%s"), fd.cFileName);
-			nefilecount++;
-		}
-
-	} while (FindNextFile(hFind, &fd));
+		} while (FindNextFile(hFind, &fd));
+	}
+	else {
+		nefilecount = 0;
+	}
 
 	FindClose(hFind);
 }
