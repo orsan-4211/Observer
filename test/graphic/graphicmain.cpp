@@ -73,10 +73,6 @@ double viewxx;
 
 int skinid;
 
-void markmove();
-void linemove();
-void packmove();
-
 void hostmarkerset();
 
 void screenblur();
@@ -739,6 +735,12 @@ void graphicmain() {
 
 		frontpos.x = 0;
 		frontpos.y = 0;
+
+		for (int i = 0; i < area.usecount; i++) {
+			if (area.data[i].GetId() != 0) {
+				area.data[i].Delete();
+			}
+		}
 	}
 
 
@@ -1858,6 +1860,9 @@ void graphicRelease() {
 
 	free(packetv.vert);
 	free(packetv.ind);
+
+	free(areav.vert);
+	free(areav.ind);
 
 	//menutex.tex->Release();
 
