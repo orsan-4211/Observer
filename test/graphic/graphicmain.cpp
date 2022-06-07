@@ -1145,7 +1145,7 @@ void linevset(Pos pos1, Pos pos2, double sx, double size, double angl, double *t
 }
 
 void packetvset(Pos pos, double sx, double sy, double size, double angl, double *tu, double *tv, DWORD col) {
-	if (packetv.vertc + 4 <= 65535 && packetv.indc + 6 <= 65535) {
+	if (packetv.vertc + 4 <= 4294967295 && packetv.indc + 6 <= 4294967295) {
 		packetv.vertc += 4;
 		packetv.indc += 6;
 	}

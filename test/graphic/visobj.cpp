@@ -39,11 +39,11 @@ void Markerclass::Set(Pos position, double angl, int *ipadd, int version, int de
 	this->hostid = hostid;
 
 	packsize = (Packsize *)malloc(sizeof(Packsize) * 1);
-	pmoveid = (int *)malloc(sizeof(int) * 1);
+	pmoveid = (long *)malloc(sizeof(long) * 1);
 	unsigned long long dummy[2] = { 0,0 };
 	packsize[0].setData(dummy, 0);
 
-	connectid = (int *)malloc(sizeof(int) * 1);
+	connectid = (long *)malloc(sizeof(long) * 1);
 	connectidcount = 0;
 	connectid[0] = 0;
 
@@ -604,7 +604,7 @@ void Lineclass::Set(Pos position1, Pos position2, int newid, int *ip1, int *ip2)
 	anmflag = 0;
 	psize = 0;
 	packsize = (Packsize *)malloc(sizeof(Packsize) * 1);
-	pmoveid = (int *)malloc(sizeof(int) * 1);
+	pmoveid = (long *)malloc(sizeof(long) * 1);
 	packsizecount = 0;
 	sumsize = 0;
 
@@ -833,7 +833,7 @@ void MarkerMasterclass::reset(){
 	data = (Markerclass *)malloc(sizeof(Markerclass) * 1);
 	usecount = 0;
 	hostcount = 0;
-	removebuff = (int *)malloc(sizeof(int) * 1);
+	removebuff = (long *)malloc(sizeof(long) * 1);
 	removebuff[0] = -1;
 	checkedcount = 0;
 
@@ -872,15 +872,15 @@ void MarkerMasterclass::jenerate(int *ip, int version, int *conectip){
 	posbuf.z = 0;
 
 	int onhostf = 0;
-	int conbuf = 1;
-	int ibuff = -1;
+	long conbuf = 1;
+	long ibuff = -1;
 	int depsbuff = 0;
 	double anglbuff = 0;
-	int sortidbuff = 0;
+	long sortidbuff = 0;
 
-	int failedid = -1;
+	long failedid = -1;
 	
-	for (int i = 0; i < usecount; i++) {
+	for (long i = 0; i < usecount; i++) {
 		int ipbuff[8];
 		ipbuff[0] = data[i].Get_IP()[0];
 		ipbuff[1] = data[i].Get_IP()[1];
@@ -914,7 +914,7 @@ void MarkerMasterclass::jenerate(int *ip, int version, int *conectip){
 
 	if (ipjenflag == 1) {
 		data = (Markerclass *)realloc(data, sizeof(Markerclass) * (usecount + 1));
-		removebuff = (int *)realloc(removebuff, sizeof(int) * (usecount + 1));
+		removebuff = (long *)realloc(removebuff, sizeof(long) * (usecount + 1));
 		removebuff[usecount] = -1;
 
 		sortidbuff = 0;
@@ -1071,12 +1071,12 @@ void MarkerMasterclass::move() {
 	posbuff.y = 0;
 	posbuff.z = 0;
 
-	int viewpopupid = -1;
+	long viewpopupid = -1;
 
 	area.data[popupareaid].SetPos(posbuff, 10, 0, 0, 0, 0);
 
-	int hostidbuff = -1;
-	int connectcountbuff = 0;
+	long hostidbuff = -1;
+	long connectcountbuff = 0;
 
 	if ((pdatacheckf & 0b00100) == 0b00000) {
 		for (int i = 0; i < pdrdata.newdatacount; i++) {
@@ -1232,7 +1232,7 @@ void MarkerMasterclass::move() {
 void LineMasterclass::reset() {
 	data = (Lineclass *)malloc(sizeof(Lineclass) * 1);
 	usecount = 0;
-	removebuff = (int *)malloc(sizeof(int) * 1);
+	removebuff = (long *)malloc(sizeof(long) * 1);
 	removebuff[0] = -1;
 	idcounter = 0;
 	checkedcount = 0;
@@ -1251,12 +1251,12 @@ void LineMasterclass::reset() {
 	}
 }
 
-int LineMasterclass::jenerate(int *ip1, int *ip2) {
+unsigned int LineMasterclass::jenerate(int *ip1, int *ip2) {
 
 
 	bool ipjenflag = 1;
 	bool ipcheckflag;
-	int returnid;
+	unsigned int returnid;
 
 	for (int i = 0; i < usecount; i++) {
 		int *ipbuff1 = data[i].Get_IP(0);
@@ -1270,7 +1270,7 @@ int LineMasterclass::jenerate(int *ip1, int *ip2) {
 
 	if (ipjenflag == 1) {
 		data = (Lineclass *)realloc(data, sizeof(Lineclass) * (usecount + 1));
-		removebuff = (int *)realloc(removebuff, sizeof(int) * (usecount + 1));
+		removebuff = (long *)realloc(removebuff, sizeof(long) * (usecount + 1));
 		removebuff[usecount] = -1;
 
 		Pos posbuff1;
@@ -1342,10 +1342,10 @@ void LineMasterclass::move(MarkerMasterclass marker) {
 	}
 	Pos posbuff1;
 	Pos posbuff2;
-	int checkf;
-	for (int i = 0; i < usecount; i++) {
+	unsigned int checkf;
+	for (long i = 0; i < usecount; i++) {
 		checkf = 0;
-		for (int j = 0; j < marker.getUsecount(); j++) {
+		for (long j = 0; j < marker.getUsecount(); j++) {
 			if (!IpMatchCheck(data[i].Get_IP(0), marker.Data(j).Get_IP())) {
 				posbuff1 = marker.Data(j).Get_ViewPos();
 				checkf++;
@@ -1395,7 +1395,7 @@ void LineMasterclass::move(MarkerMasterclass marker) {
 void PacketMasterclass::reset() {
 	data = (Packetclass *)malloc(sizeof(Packetclass) * 1);
 	usecount = 0;
-	removebuff = (int *)malloc(sizeof(int) * 1);
+	removebuff = (long *)malloc(sizeof(long) * 1);
 	removebuff[0] = -1;
 	idcounter = 0;
 	checkedcount = 0;
@@ -1419,11 +1419,11 @@ void PacketMasterclass::reset() {
 	
 }
 
-void PacketMasterclass::jenerate(int *ip1, int *ip2, int pacsize, unsigned long long *janeratetime, unsigned long long arrivaltime0, unsigned long long arrivaltime1, int tableid, bool reverse) {
+void PacketMasterclass::jenerate(int *ip1, int *ip2, int pacsize, unsigned long long *janeratetime, unsigned long long arrivaltime0, unsigned long long arrivaltime1, unsigned int tableid, bool reverse) {
 
 
 	data = (Packetclass *)realloc(data, sizeof(Packetclass) * (usecount + 1));
-	removebuff = (int *)realloc(removebuff, sizeof(int) * (usecount + 1));
+	removebuff = (long *)realloc(removebuff, sizeof(long) * (usecount + 1));
 	removebuff[usecount] = -1;
 
 	Pos posbuff1;
@@ -1448,9 +1448,9 @@ void PacketMasterclass::sort() {
 }
 
 void PacketMasterclass::remove() {
-	int removecount = 0;
-	int useremovecount = 0;
-	int usecountbuff = 0;
+	unsigned int removecount = 0;
+	unsigned int useremovecount = 0;
+	unsigned int usecountbuff = 0;
 	for (int i = 0; i < usecount; i++) {
 		if (data[i].Get_Anmflag() == -1) {
 			removebuff[removecount] = i;
@@ -1490,12 +1490,12 @@ void PacketMasterclass::move(MarkerMasterclass marker) {
 	int routingcheck = 0;
 	int reverseflag = 0;
 
-	int *checkedid;
+	long *checkedid;
 	bool *checkedidrev;
-	int checkedidcount = 0;
+	long checkedidcount = 0;
 	bool checkedidflag = 0;
 
-	checkedid = (int *)malloc(sizeof(int) * 1);
+	checkedid = (long *)malloc(sizeof(long) * 1);
 	checkedidrev = (bool *)malloc(sizeof(bool) * 1);
 
 
@@ -1537,7 +1537,7 @@ void PacketMasterclass::move(MarkerMasterclass marker) {
 							debugsumsize += pdrdata.newdata[i].pacsize;
 							checkaddr = i;
 
-							checkedid = (int *)realloc(checkedid, sizeof(int) * (checkedidcount + 1));
+							checkedid = (long *)realloc(checkedid, sizeof(long) * (checkedidcount + 1));
 							checkedidrev = (bool *)realloc(checkedidrev, sizeof(bool) * (checkedidcount + 1));
 
 							checkedid[checkedidcount] = routingcheck;
@@ -1691,7 +1691,7 @@ void RoutingMasterclass::reset() {
 	data = (Routingclass *)malloc(sizeof(Routingclass) * 1);
 	usecount = 0;
 
-	checkedid = (int *)malloc(sizeof(int) * 1);
+	checkedid = (long *)malloc(sizeof(long) * 1);
 	checkedidcount = 0;
 }
 
@@ -1704,11 +1704,11 @@ void RoutingMasterclass::jenerate(int *ip1, int version1, int *ip2, int version2
 
 }
 
-int RoutingMasterclass::check(MarkerMasterclass marker, int *ip1, int version1, int *ip2, int version2) {
-	int checkreturn = -1;
-	int checkmarkerid = -1;
+long RoutingMasterclass::check(MarkerMasterclass marker, int *ip1, int version1, int *ip2, int version2) {
+	long checkreturn = -1;
+	long checkmarkerid = -1;
 
-	for (int i = 0; i < usecount; i++) {
+	for (unsigned int i = 0; i < usecount; i++) {
 		int checkflag = 0;
 		if (!IpMatchCheck(data[i].Get_IP(0), ip1)) {
 			checkflag++;
@@ -1741,7 +1741,7 @@ int RoutingMasterclass::check(MarkerMasterclass marker, int *ip1, int version1, 
 		}
 #endif
 		jenerate(ip2, version2, ip1, version1);
-		for (int i = 0; i < marker.getUsecount(); i++) {
+		for (long i = 0; i < marker.getUsecount(); i++) {
 			if (!IpMatchCheck(marker.Data(i).Get_IP(), ip1)) {
 				checkmarkerid = i;
 				break;
@@ -1779,7 +1779,7 @@ bool RoutingMasterclass::mkidcheck(MarkerMasterclass marker, int *ip, int versio
 	bool checkflag = false;
 	bool nocheck = false;
 
-	for (int i = 0; i < checkedidcount; i++) {
+	for (unsigned int i = 0; i < checkedidcount; i++) {
 		if (checkedid[i] == id) {
 			nocheck = true;
 		}
@@ -1787,7 +1787,7 @@ bool RoutingMasterclass::mkidcheck(MarkerMasterclass marker, int *ip, int versio
 
 	if (!nocheck) {
 
-		checkedid = (int *)realloc(checkedid, sizeof(int) * (checkedidcount + 1));
+		checkedid = (long *)realloc(checkedid, sizeof(long) * (checkedidcount + 1));
 		checkedid[checkedidcount] = id;
 		checkedidcount++;
 
@@ -1821,7 +1821,7 @@ bool RoutingMasterclass::mkidcheck(MarkerMasterclass marker, int *ip, int versio
 		}
 
 		if (checkflag == false) {
-			for (int i = 0; i < marker.Data(id).Get_ConnectidCount(); i++) {
+			for (long i = 0; i < marker.Data(id).Get_ConnectidCount(); i++) {
 
 				if (mkidcheck(marker, ip, version, marker.Data(id).Get_Connectid(i), dataid)) {
 #if _DEBUG

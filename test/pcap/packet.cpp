@@ -1052,7 +1052,9 @@ void PacDevSet() {
 	if (dwRet != ERROR_SUCCESS) {
 		exit(1);
 	}
+
 	int adptcount = 0;
+	
 	for (pAA = pAdapterAddresses; pAA->Next != NULL; pAA = pAA->Next) {
 		adptcount++;
 		char szAdapterName[BUFSIZ];
@@ -1085,115 +1087,6 @@ void PacDevSet() {
 
 		pdev.jenerate(-1, pAA->AdapterName, pAA->FriendlyName);
 
-
-		if (pAA->FirstDnsServerAddress != NULL) {
-
-#if _DEBUG
-			if (DEVICE_LOG == 1) {
-				sprintf_s(textc, "DnsServer\n");
-				OutputDebugStringA(textc);
-			}
-#endif
-			for (PIP_ADAPTER_DNS_SERVER_ADDRESS adr = pAA->FirstDnsServerAddress; adr != NULL; adr = adr->Next) {
-				char ip6str[128];
-				int ipbuff[8];
-				char ipbuffc[8][5];
-				int flagbuffcount[2];
-				int ipsepcount;
-
-				if (adr == NULL)break;
-				switch (adr->Address.lpSockaddr->sa_family)
-				{
-				case AF_INET:
-					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in *)adr->Address.lpSockaddr)->sin_addr, ip6str, sizeof(ip6str));
-#if _DEBUG
-					if (DEVICE_LOG == 1) {
-						sprintf_s(textc, "address: %s\n", ip6str);
-						OutputDebugStringA(textc);
-					}
-#endif
-
-					if (ip6str != NULL) {
-						sscanf_s(ip6str, "%d.%d.%d.%d", &ipbuff[0], &ipbuff[1], &ipbuff[2], &ipbuff[3]);
-						ipbuff[4] = 0;
-						ipbuff[5] = 0;
-						ipbuff[6] = 0;
-						ipbuff[7] = 0;
-						hdata.jenerate(adptcount, ipbuff, 4, pAA->AdapterName);
-					}
-					break;
-
-				case AF_INET6:
-					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in6 *)adr->Address.lpSockaddr)->sin6_addr, ip6str, sizeof(ip6str));
-					
-#if _DEBUG
-					if (DEVICE_LOG == 1) {
-						sprintf_s(textc, "address: %s\n", ip6str);
-						OutputDebugStringA(textc);
-					}
-#endif
-
-					if (ip6str != NULL) {
-						flagbuffcount[0] = 0;
-						flagbuffcount[1] = 0;
-						ipsepcount = 0;
-
-						for (int i = 0; i < 128; i++) {
-							if (ip6str[i] == ':') {
-								ipsepcount++;
-							}
-							if (ip6str[i] == 0) break;
-						}
-
-						for (int i = 0; i < 128; i++) {
-							if (ip6str[i] == '%' || ip6str[i] == 'Ì') {
-								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
-								break;
-							}
-							else if (ip6str[i] == 0) {
-								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
-								break;
-							}
-							else if (ip6str[i] == ':') {
-								if (flagbuffcount[1] == 0) {
-									for (int j = 0; j < 8 - ipsepcount; j++) {
-										ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = '0';
-										ipbuffc[flagbuffcount[0]][flagbuffcount[1] + 1] = 0;
-										flagbuffcount[0]++;
-									}
-								}
-								else {
-									ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
-									flagbuffcount[0]++;
-								}
-								flagbuffcount[1] = 0;
-							}
-							else {
-								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = ip6str[i];
-								flagbuffcount[1]++;
-							}
-
-						}
-
-#if _DEBUG
-						if (DEVICE_LOG == 1) {
-							sprintf_s(textc, "(%s:%s:%s:%s:%s:%s:%s:%s)\n", ipbuffc[0], ipbuffc[1], ipbuffc[2], ipbuffc[3], ipbuffc[4], ipbuffc[5], ipbuffc[6], ipbuffc[7]);
-							OutputDebugStringA(textc);
-						}
-#endif
-
-						for (int i = 0; i < 8; i++) {
-							sscanf_s(ipbuffc[i], "%x", &ipbuff[i]);
-						}
-						hdata.jenerate(adptcount, ipbuff, 6, pAA->AdapterName);
-					}
-					break;
-				default:
-					break;
-				}
-			}
-		}
-
 		if (pAA->FirstUnicastAddress != NULL) {
 
 #if _DEBUG
@@ -1215,7 +1108,7 @@ void PacDevSet() {
 				{
 				case AF_INET:
 					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in *)adr->Address.lpSockaddr)->sin_addr, ip6str, sizeof(ip6str));
-					
+
 #if _DEBUG
 					if (DEVICE_LOG == 1) {
 						sprintf_s(textc, "address: %s\n", ip6str);
@@ -1234,7 +1127,7 @@ void PacDevSet() {
 					break;
 				case AF_INET6:
 					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in6 *)adr->Address.lpSockaddr)->sin6_addr, ip6str, sizeof(ip6str));
-					
+
 #if _DEBUG
 					if (DEVICE_LOG == 1) {
 						sprintf_s(textc, "address: %s\n", ip6str);
@@ -1444,7 +1337,7 @@ void PacDevSet() {
 					break;
 				case AF_INET6:
 					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in6 *)adr->Address.lpSockaddr)->sin6_addr, ip6str, sizeof(ip6str));
-					
+
 #if _DEBUG
 					if (DEVICE_LOG == 1) {
 						sprintf_s(textc, "address: %s\n", ip6str);
@@ -1511,6 +1404,116 @@ void PacDevSet() {
 				}
 			}
 		}
+
+		if (pAA->FirstDnsServerAddress != NULL) {
+
+#if _DEBUG
+			if (DEVICE_LOG == 1) {
+				sprintf_s(textc, "DnsServer\n");
+				OutputDebugStringA(textc);
+			}
+#endif
+			for (PIP_ADAPTER_DNS_SERVER_ADDRESS adr = pAA->FirstDnsServerAddress; adr != NULL; adr = adr->Next) {
+				char ip6str[128];
+				int ipbuff[8];
+				char ipbuffc[8][5];
+				int flagbuffcount[2];
+				int ipsepcount;
+
+				if (adr == NULL)break;
+				switch (adr->Address.lpSockaddr->sa_family)
+				{
+				case AF_INET:
+					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in *)adr->Address.lpSockaddr)->sin_addr, ip6str, sizeof(ip6str));
+#if _DEBUG
+					if (DEVICE_LOG == 1) {
+						sprintf_s(textc, "address: %s\n", ip6str);
+						OutputDebugStringA(textc);
+					}
+#endif
+
+					if (ip6str != NULL) {
+						sscanf_s(ip6str, "%d.%d.%d.%d", &ipbuff[0], &ipbuff[1], &ipbuff[2], &ipbuff[3]);
+						ipbuff[4] = 0;
+						ipbuff[5] = 0;
+						ipbuff[6] = 0;
+						ipbuff[7] = 0;
+						hdata.jenerate(adptcount, ipbuff, 4, pAA->AdapterName);
+					}
+					break;
+
+				case AF_INET6:
+					inet_ntop(adr->Address.lpSockaddr->sa_family, &((struct sockaddr_in6 *)adr->Address.lpSockaddr)->sin6_addr, ip6str, sizeof(ip6str));
+					
+#if _DEBUG
+					if (DEVICE_LOG == 1) {
+						sprintf_s(textc, "address: %s\n", ip6str);
+						OutputDebugStringA(textc);
+					}
+#endif
+
+					if (ip6str != NULL) {
+						flagbuffcount[0] = 0;
+						flagbuffcount[1] = 0;
+						ipsepcount = 0;
+
+						for (int i = 0; i < 128; i++) {
+							if (ip6str[i] == ':') {
+								ipsepcount++;
+							}
+							if (ip6str[i] == 0) break;
+						}
+
+						for (int i = 0; i < 128; i++) {
+							if (ip6str[i] == '%' || ip6str[i] == 'Ì') {
+								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
+								break;
+							}
+							else if (ip6str[i] == 0) {
+								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
+								break;
+							}
+							else if (ip6str[i] == ':') {
+								if (flagbuffcount[1] == 0) {
+									for (int j = 0; j < 8 - ipsepcount; j++) {
+										ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = '0';
+										ipbuffc[flagbuffcount[0]][flagbuffcount[1] + 1] = 0;
+										flagbuffcount[0]++;
+									}
+								}
+								else {
+									ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = 0;
+									flagbuffcount[0]++;
+								}
+								flagbuffcount[1] = 0;
+							}
+							else {
+								ipbuffc[flagbuffcount[0]][flagbuffcount[1]] = ip6str[i];
+								flagbuffcount[1]++;
+							}
+
+						}
+
+#if _DEBUG
+						if (DEVICE_LOG == 1) {
+							sprintf_s(textc, "(%s:%s:%s:%s:%s:%s:%s:%s)\n", ipbuffc[0], ipbuffc[1], ipbuffc[2], ipbuffc[3], ipbuffc[4], ipbuffc[5], ipbuffc[6], ipbuffc[7]);
+							OutputDebugStringA(textc);
+						}
+#endif
+
+						for (int i = 0; i < 8; i++) {
+							sscanf_s(ipbuffc[i], "%x", &ipbuff[i]);
+						}
+						hdata.jenerate(adptcount, ipbuff, 6, pAA->AdapterName);
+					}
+					break;
+				default:
+					break;
+				}
+			}
+		}
+
+
 
 #if _DEBUG
 		if (DEVICE_LOG == 1) {

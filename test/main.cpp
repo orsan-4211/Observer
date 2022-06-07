@@ -93,8 +93,8 @@ WORD defaultind[6];
 
 DX11Buffeer vbuff;
 DX11Buffeer ibuff;
-int vertmaxcount;
-int indmaxcount;
+unsigned int vertmaxcount;
+unsigned int indmaxcount;
 
 XMMATRIX worldMatrix;
 
@@ -654,7 +654,7 @@ void alldr() {
 
 }
 
-void drvert(Vertex *vert, int vertcount, WORD *ind, int indcount, int useind, int startind, int startvert, ID3D11ShaderResourceView* texview, D3D11_VIEWPORT *view) {
+void drvert(Vertex *vert, unsigned int vertcount, WORD *ind, unsigned int indcount, unsigned int useind, unsigned int startind, unsigned int startvert, ID3D11ShaderResourceView* texview, D3D11_VIEWPORT *view) {
 
 	dxg.RenderSet();
 

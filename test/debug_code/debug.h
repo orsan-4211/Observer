@@ -2,7 +2,7 @@
 #define INCLUDED_DEBUG
 
 #define PACKET_LOG 0
-#define DEVICE_LOG 0
+#define DEVICE_LOG 1
 #define TIME_LOG 0
 #define MOUSEPOS_LOG 0
 

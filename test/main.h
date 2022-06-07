@@ -16,7 +16,7 @@
 
 #include "keyinput.h"
 
-#define VERSION "Observer 2021.09.0003c"
+#define VERSION "Observer 2021.09.0003d"
 
 #define FPS_LIMIT 60.0 / 60.0
 
@@ -44,8 +44,8 @@ extern WORD defaultind[6];
 
 extern DX11Buffeer vbuff;
 extern DX11Buffeer ibuff;
-extern int vertmaxcount;
-extern int indmaxcount;
+extern unsigned int vertmaxcount;
+extern unsigned int indmaxcount;
 
 extern XMMATRIX worldMatrix;
 
@@ -91,6 +91,6 @@ extern bool threadfinf;
 extern DX113D dxg;
 
 extern void maingrset();
-extern void drvert(Vertex *vert, int vertcount, WORD *ind, int indcount, int useind, int startind, int startvert, ID3D11ShaderResourceView* texview, D3D11_VIEWPORT *view);
+extern void drvert(Vertex *vert, unsigned int vertcount, WORD *ind, unsigned int indcount, unsigned int useind, unsigned int startind, unsigned int startvert, ID3D11ShaderResourceView* texview, D3D11_VIEWPORT *view);
 
 #endif

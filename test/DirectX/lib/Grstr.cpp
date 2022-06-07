@@ -64,7 +64,7 @@ void gstrclass::Stringset(double x, double y, double sizex, double sizey, double
 		}
 
 		for (int setsti = 0; setsti < len; setsti++) {
-			if (vertc + 4 <= 65535 && indc + 6 <= 65535) {
+			if (vertc + 4 <= 4294967295 && indc + 6 <= 4294967295) {
 				vertc += 4;
 				indc += 6;
 

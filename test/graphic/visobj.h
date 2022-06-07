@@ -69,16 +69,16 @@ private:
 	int anmflag;
 	int phaseflag;
 	double angl;
-	int deps;
-	int connectcount;
-	int hostid;
-	int *connectid;
-	int connectidcount;
-	int sortid;
+	long deps;
+	long connectcount;
+	long hostid;
+	long *connectid;
+	long connectidcount;
+	long sortid;
 
 	Packsize *packsize;
-	int *pmoveid;
-	int packsizecount;
+	long *pmoveid;
+	long packsizecount;
 	int sumsize;
 
 	DWORD col;
@@ -115,7 +115,7 @@ public:
 
 	void Set_Packsize(unsigned long long *janeratetime, int size) {
 		packsize = (Packsize *)realloc(packsize, sizeof(Packsize) * (packsizecount + 1));
-		pmoveid = (int *)realloc(pmoveid, sizeof(int) * (packsizecount + 1));
+		pmoveid = (long *)realloc(pmoveid, sizeof(long) * (packsizecount + 1));
 
 		packsize[packsizecount].setData(janeratetime, size);
 		pmoveid[packsizecount] = -1;
@@ -129,7 +129,7 @@ public:
 		int moveidchecked = 0;
 
 		sumsize = 0;
-		for (int i = 0; i < packsizecount; i++) {
+		for (long i = 0; i < packsizecount; i++) {
 			if (10 < nowtime[0] - packsize[i].getTime(0) - (nowtime[1] - packsize[i].getTime(1) < 0 ? 1 : 0)) {
 				pmoveid[moveidcheck] = i;
 				moveidcheck++;
@@ -177,12 +177,12 @@ public:
 		packsizecount = datacount;
 	}
 
-	void Add_Connectcount(int add) {
+	void Add_Connectcount(long add) {
 		connectcount += add;
 	};
 
-	void Add_Connectid(int id) {
-		connectid = (int *)realloc(connectid, sizeof(int) * (connectidcount + 1));
+	void Add_Connectid(long id) {
+		connectid = (long *)realloc(connectid, sizeof(long) * (connectidcount + 1));
 		
 		connectid[connectidcount] = id;
 		
@@ -208,22 +208,22 @@ public:
 	int Get_Anmflag() {
 		return anmflag;
 	}
-	int Get_Deps() {
+	long Get_Deps() {
 		return deps;
 	}
-	int Get_Connectcount() {
+	long Get_Connectcount() {
 		return connectcount;
 	};
 
-	int Get_Sortid() {
+	long Get_Sortid() {
 		return sortid;
 	}
 
-	int Get_Connectid(int id) {
+	long Get_Connectid(int id) {
 		return connectid[id];
 	}
 
-	int Get_ConnectidCount() {
+	long Get_ConnectidCount() {
 		return connectidcount;
 	}
 
@@ -279,8 +279,8 @@ private:
 	double angl;
 
 	Packsize *packsize;
-	int *pmoveid;
-	int packsizecount;
+	long *pmoveid;
+	long packsizecount;
 	int sumsize;
 
 	DWORD col;
@@ -301,7 +301,7 @@ public:
 	
 	void Set_Packsize(unsigned long long *janeratetime, int size) {
 		packsize = (Packsize *)realloc(packsize, sizeof(Packsize) * (packsizecount + 1));
-		pmoveid = (int *)realloc(pmoveid, sizeof(int) * (packsizecount + 1));
+		pmoveid = (long *)realloc(pmoveid, sizeof(long) * (packsizecount + 1));
 
 		packsize[packsizecount].setData(janeratetime, size);
 		pmoveid[packsizecount] = -1;
@@ -420,7 +420,7 @@ private:
 	double pacsize;
 	int opacsize;
 
-	int tableid;
+	long tableid;
 	bool reverse;
 
 	unsigned long long janeratetime[2];
@@ -539,11 +539,11 @@ public:
 class MarkerMasterclass {
 private:
 
-	int usecount;
-	int hostcount;
-	int *removebuff;
+	unsigned int usecount;
+	unsigned int hostcount;
+	long *removebuff;
 	
-	int checkedcount;
+	unsigned int checkedcount;
 
 	double tu[2], tv[2];
 
@@ -564,11 +564,11 @@ public:
 	Markerclass &Data(int id) {
 		return data[id];
 	}
-	int getUsecount() {
+	long getUsecount() {
 		return usecount;
 	}
 
-	int getCheckedcount() {
+	long getCheckedcount() {
 		return checkedcount;
 	}
 	
@@ -595,11 +595,11 @@ public:
 class LineMasterclass {
 private:
 	
-	int usecount;
-	int *removebuff;
-	int idcounter;
+	unsigned int usecount;
+	long *removebuff;
+	unsigned int idcounter;
 
-	int checkedcount;
+	unsigned int checkedcount;
 
 	double tu[2], tv[2];
 	
@@ -609,7 +609,7 @@ public:
 	
 
 	void reset();
-	int jenerate(int *ip1, int *ip2);
+	unsigned int jenerate(int *ip1, int *ip2);
 	void sort();
 	void remove();
 	void datafree();
@@ -619,14 +619,14 @@ public:
 	Lineclass &Data(int id) {
 		return data[id];
 	}
-	int getUsecount() {
+	unsigned int getUsecount() {
 		return usecount;
 	}
-	int getIdcounter() {
+	unsigned int getIdcounter() {
 		return idcounter;
 	}
 
-	int getCheckedcount() {
+	unsigned int getCheckedcount() {
 		return checkedcount;
 	}
 
@@ -653,7 +653,7 @@ class PacketMasterclass {
 private:
 	
 	unsigned int usecount;
-	int *removebuff;
+	long *removebuff;
 	unsigned int idcounter;
 
 	unsigned int checkedcount;
@@ -667,7 +667,7 @@ public:
 	
 
 	void reset();
-	void jenerate(int *ip1, int *ip2, int pacsize, unsigned long long *janeratetime, unsigned long long arrivaltime0, unsigned long long arrivaltime1, int tableid, bool reverse);
+	void jenerate(int *ip1, int *ip2, int pacsize, unsigned long long *janeratetime, unsigned long long arrivaltime0, unsigned long long arrivaltime1, unsigned int tableid, bool reverse);
 	void sort();
 	void remove();
 	void datafree();
@@ -677,14 +677,14 @@ public:
 	Packetclass &Data(int id) {
 		return data[id];
 	}
-	int getUsecount() {
+	unsigned int getUsecount() {
 		return usecount;
 	}
-	int getIdcounter() {
+	unsigned int getIdcounter() {
 		return idcounter;
 	}
 
-	int getCheckedcount() {
+	unsigned int getCheckedcount() {
 		return checkedcount;
 	}
 
@@ -712,8 +712,8 @@ private:
 	int ip[2][8];
 	int version[2];
 
-	int *data;
-	int datacount;
+	long *data;
+	unsigned int datacount;
 public:
 
 	void Set(int *ip1, int version1, int *ip2, int version2) {
@@ -739,14 +739,14 @@ public:
 
 		version[1] = version2;
 
-		data = (int *)malloc(sizeof(int) * 1);
+		data = (long *)malloc(sizeof(long) * 1);
 
 		data[0] = 0;
 		datacount = 0;
 	}
 
 	void Add(int id) {
-		data = (int *)realloc(data, sizeof(int) * (datacount + 1));
+		data = (long *)realloc(data, sizeof(long) * (datacount + 1));
 		
 		data[datacount] = id;
 
@@ -769,11 +769,11 @@ public:
 		return version[id];
 	}
 
-	int *Data() {
+	long *Data() {
 		return data;
 	}
 
-	int Get_Datacount() {
+	unsigned int Get_Datacount() {
 		return datacount;
 	}
 };
@@ -782,24 +782,24 @@ class RoutingMasterclass {
 private:
 
 	Routingclass *data;
-	int usecount;
+	unsigned int usecount;
 
-	int *checkedid;
-	int checkedidcount;
+	long *checkedid;
+	unsigned int checkedidcount;
 
 public:
 
 	void reset();
 	void jenerate(int *ip1, int version1, int *ip2, int version2);
 
-	int check(MarkerMasterclass marker, int *ip1, int version1, int *ip2, int version2);
+	long check(MarkerMasterclass marker, int *ip1, int version1, int *ip2, int version2);
 
 	bool mkidcheck(MarkerMasterclass marker, int *ip, int version, int id, int dataid);
 
 	Routingclass &Data(int id) {
 		return data[id];
 	}
-	int getUsecount() {
+	unsigned int getUsecount() {
 		return usecount;
 	}
 
