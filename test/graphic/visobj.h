@@ -76,6 +76,8 @@ private:
 	long connectidcount;
 	long sortid;
 
+	bool distflag;
+
 	Packsize *packsize;
 	long *pmoveid;
 	long packsizecount;
@@ -111,6 +113,10 @@ public:
 
 	void Set_Col(DWORD col) {
 		this->col = col;
+	}
+
+	void Set_Distflag(bool flag) {
+		distflag = flag;
 	}
 
 	void Set_Packsize(unsigned long long *janeratetime, int size) {
@@ -241,6 +247,10 @@ public:
 
 	int Get_Packsizecount() {
 		return packsizecount;
+	}
+
+	bool Get_Distflag() {
+		return distflag;
 	}
 
 	void Free_Packsize() {

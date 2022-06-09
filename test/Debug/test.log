@@ -37,9 +37,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
@@ -261,9 +261,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\setting\setting.cpp(173): warning C4101: 'debptextc': ローカル変数は 1 度も使われていません。
   packet.cpp
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
@@ -303,9 +303,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
@@ -381,9 +381,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
@@ -497,9 +497,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(618): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
@@ -605,9 +605,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
@@ -633,50 +633,48 @@ c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(117): warni
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(120): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(123): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(126): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(138): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(210): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(211): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(334): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(335): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(403): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(404): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(135): warning C4101: 'anglmarge': ローカル変数は 1 度も使われていません。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(539): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(540): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(554): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(555): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(571): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(572): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(581): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(582): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(666): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(883): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(970): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(995): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1053): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1100): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1153): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1159): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1162): warning C4244: '=': 'long' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1166): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1169): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1261): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1258): warning C4101: 'ipcheckflag': ローカル変数は 1 度も使われていません。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1304): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1321): warning C4018: '>': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1331): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1346): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1454): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1463): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1503): warning C4018: '>': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1529): warning C4805: '==': 演算中の 'bool' 型と 'int' 型の混用は安全ではありません
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1536): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1544): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1572): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1580): warning C4244: '引数': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1638): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1639): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1488): warning C4101: 'debptextc': ローカル変数は 1 度も使われていません。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(142): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(304): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(305): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(515): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(516): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(727): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(728): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(137): warning C4101: 'anglmarge': ローカル変数は 1 度も使われていません。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(863): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(864): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(878): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(879): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(895): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(896): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(905): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(906): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(990): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1207): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1294): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1319): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1473): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1474): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1498): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1504): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1507): warning C4244: '=': 'long' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1511): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1514): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1606): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1603): warning C4101: 'ipcheckflag': ローカル変数は 1 度も使われていません。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1666): warning C4018: '>': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1676): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1691): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1808): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1848): warning C4018: '>': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1874): warning C4805: '==': 演算中の 'bool' 型と 'int' 型の混用は安全ではありません
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1881): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1889): warning C4800: 'int': ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1917): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1925): warning C4244: '引数': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1983): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1984): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.cpp(1833): warning C4101: 'debptextc': ローカル変数は 1 度も使われていません。
   skinmanager.cpp
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(65): warning C4477: 'sprintf_s' : 書式文字列 '%u' には、型 'unsigned int' の引数が必要ですが、可変個引数 2 は型 'unsigned __int64' です
@@ -715,9 +713,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
   graphicmain.cpp
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(65): warning C4477: 'sprintf_s' : 書式文字列 '%u' には、型 'unsigned int' の引数が必要ですが、可変個引数 2 は型 'unsigned __int64' です
@@ -756,9 +754,9 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
   c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(516): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(520): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(807): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。

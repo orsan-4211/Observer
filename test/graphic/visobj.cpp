@@ -50,6 +50,8 @@ void Markerclass::Set(Pos position, double angl, int *ipadd, int version, int de
 	packsizecount = 0;
 	sumsize = 0;
 	col = 0xffffffff;
+
+	distflag = 0;
 }
 
 void Markerclass::Set_Pos(Pos position) {
@@ -134,6 +136,8 @@ void Markerclass::Move(Pos pos, double angl, int connectcount, int centerf) {
 	double anglcalbuff;
 	double anglmarge;
 	double langebuff;
+	double lagnecalbuff;
+	double xbuff, ybuff;
 
 	Check_Packsize(analysis.time.GetCaptureTime(), skinset.mlsizeborder, skinset.emphasisborder1[0], skinset.emphasisborder2[0]);
 
@@ -143,262 +147,582 @@ void Markerclass::Move(Pos pos, double angl, int connectcount, int centerf) {
 
 			langebuff = 0;
 
-			posbuff.x = 0;
-			posbuff.y = 0;
-			posbuff.z = 0;
+			//posbuff.x = 0;
+			//posbuff.y = 0;
+			//posbuff.z = 0;
 		}else
 		if (deps == 0) {
-			anglcalbuff = (360.0 / (connectcount + 1) * (sortid + 1)) - anglbuff;
+			
 
-			if (anglcalbuff > 0) {
-				if (0.05 > anglcalbuff) {
-					anglbuff = 360.0 / (connectcount + 1) * (sortid + 1);
-				}
-				else {
+			xbuff = posbuff.x - pos.x;
+			ybuff = posbuff.y - pos.y;
 
-					if (50.0 < anglcalbuff) {
-						anglbuff += 2.0;
-					}
-					else if (20.0 < anglcalbuff) {
-						anglbuff += 1.0;
-					}
-					else if (10.0 < anglcalbuff) {
-						anglbuff += 0.25;
-					}
-					else if (5.0 < anglcalbuff) {
-						anglbuff += 0.1;
-					}
-					else if (1.0 < anglcalbuff) {
-						anglbuff += 0.05;
+			anglbuff = atan2(ybuff, xbuff) * 180 / PI;
+
+			if (anglbuff < 0){
+				anglbuff = 360 + anglbuff;
+			}
+		
+			xbuff = posbuff.x - pos.x;
+			ybuff = posbuff.y - pos.y;
+			langebuff = sqrt((xbuff * xbuff) + (ybuff * ybuff));
+
+
+			if (dkb.GetKeySt(KEY_W) == 1 || Get_Distflag() == 0) {
+
+				anglcalbuff = (360.0 / (connectcount + 1) * (sortid + 1)) - anglbuff;
+
+				if (anglcalbuff > 0) {
+					if (0.05 > anglcalbuff) {
+						anglbuff = 360.0 / (connectcount + 1) * (sortid + 1);
 					}
 					else {
-						anglbuff += 0.01;
-					}
-					
-				}
-			}
-			else if (anglcalbuff < 0) {
-				if (-0.05 < anglcalbuff) {
-					anglbuff = 360.0 / (connectcount + 1) * (sortid + 1);
-				}
-				else {
 
-					if (-50.0 > anglcalbuff) {
-						anglbuff -= 2.0;
+						if (50.0 < anglcalbuff) {
+							anglbuff += 2.0;
+						}
+						else if (20.0 < anglcalbuff) {
+							anglbuff += 1.0;
+						}
+						else if (10.0 < anglcalbuff) {
+							anglbuff += 0.25;
+						}
+						else if (5.0 < anglcalbuff) {
+							anglbuff += 0.1;
+						}
+						else if (1.0 < anglcalbuff) {
+							anglbuff += 0.05;
+						}
+						else {
+							anglbuff += 0.01;
+						}
+
 					}
-					else if (-20.0 > anglcalbuff) {
-						anglbuff -= 1.0;
-					}
-					else if (-10.0 > anglcalbuff) {
-						anglbuff -= 0.25;
-					}
-					else if (-5.0 > anglcalbuff) {
-						anglbuff -= 0.1;
-					}
-					else if (-1.0 > anglcalbuff) {
-						anglbuff -= 0.05;
+				}
+				else if (anglcalbuff < 0) {
+					if (-0.05 < anglcalbuff) {
+						anglbuff = 360.0 / (connectcount + 1) * (sortid + 1);
 					}
 					else {
-						anglbuff -= 0.01;
-					}
 
+						if (-50.0 > anglcalbuff) {
+							anglbuff -= 2.0;
+						}
+						else if (-20.0 > anglcalbuff) {
+							anglbuff -= 1.0;
+						}
+						else if (-10.0 > anglcalbuff) {
+							anglbuff -= 0.25;
+						}
+						else if (-5.0 > anglcalbuff) {
+							anglbuff -= 0.1;
+						}
+						else if (-1.0 > anglcalbuff) {
+							anglbuff -= 0.05;
+						}
+						else {
+							anglbuff -= 0.01;
+						}
+
+					}
 				}
+
+				lagnecalbuff = DEF_HPOS_SET_BASE * (5 / ((deps * 0.5) + 1.0 - ((int)(anglbuff / 360) / 50.0)));
+
+				if (langebuff < lagnecalbuff) {
+					if (lagnecalbuff - langebuff < 0.05) {
+						langebuff = lagnecalbuff;
+					}
+					else {
+						langebuff += 0.05;
+						if (lagnecalbuff - langebuff > 0.5) {
+							langebuff += 0.1;
+						}
+
+						if (lagnecalbuff - langebuff > 2.5) {
+							langebuff += 0.5;
+						}
+
+						if (lagnecalbuff - langebuff > 5.0) {
+							langebuff += 1.0;
+						}
+
+						if (lagnecalbuff - langebuff > 50.0) {
+							langebuff += 10.0;
+						}
+
+						if (lagnecalbuff - langebuff > 500.0) {
+							langebuff += 100.0;
+						}
+
+						if (lagnecalbuff - langebuff > 2500.0) {
+							langebuff += 500.0;
+						}
+
+					}
+				}
+				else if (langebuff > lagnecalbuff) {
+					if (lagnecalbuff - langebuff > -0.05) {
+						langebuff = lagnecalbuff;
+					}
+					else {
+						langebuff -= 0.05;
+						if (lagnecalbuff - langebuff < -0.5) {
+							langebuff -= 0.1;
+						}
+
+						if (lagnecalbuff - langebuff < -2.5) {
+							langebuff -= 0.5;
+						}
+
+						if (lagnecalbuff - langebuff < -5.0) {
+							langebuff -= 1.0;
+						}
+
+						if (lagnecalbuff - langebuff < -50.0) {
+							langebuff -= 10.0;
+						}
+
+						if (lagnecalbuff - langebuff < -500.0) {
+							langebuff -= 100.0;
+						}
+
+
+						if (lagnecalbuff - langebuff < -2500.0) {
+							langebuff -= 500.0;
+						}
+
+					}
+				}
+				else {
+					langebuff = lagnecalbuff;
+				}
+
+				Set_Distflag(0);
 			}
 
-			langebuff = DEF_HPOS_SET_BASE * (5 / ((deps * 0.5) + 1.0 - ((int)(anglbuff / 360) / 50.0)));
-
-			posbuff.x = 0 + (langebuff * cos(anglbuff * PI / 180.0));
-			posbuff.y = 0 + (langebuff * sin(anglbuff * PI / 180.0));
+			posbuff.x = pos.x + (langebuff * cos(anglbuff * PI / 180.0));
+			posbuff.y = pos.y + (langebuff * sin(anglbuff * PI / 180.0));
 			posbuff.z = 0;
 
 		}else
 		if (deps == 1) {
-			if (hostid == 0) {
-				anglcalbuff = (360.0 / connectcount * sortid) - anglbuff;
-				if (anglcalbuff > 0) {
-					if (0.05 > anglcalbuff) {
-						anglbuff = (360.0 / connectcount * sortid);
-					}
-					else {
 
-						if (50.0 < anglcalbuff) {
-							anglbuff += 2.0;
-						}
-						else if (20.0 < anglcalbuff) {
-							anglbuff += 1.0;
-						}
-						else if (10.0 < anglcalbuff) {
-							anglbuff += 0.25;
-						}
-						else if (5.0 < anglcalbuff) {
-							anglbuff += 0.1;
-						}
-						else if (1.0 < anglcalbuff) {
-							anglbuff += 0.05;
-						}
-						else {
-							anglbuff += 0.01;
-						}
 
-					}
-					
-				}
-				else if (anglcalbuff < 0) {
-					if (-0.05 < anglcalbuff) {
-						anglbuff = (360.0 / connectcount * sortid);
-					}
-					else {
+			xbuff = posbuff.x - pos.x;
+			ybuff = posbuff.y - pos.y;
 
-						if (-50.0 > anglcalbuff) {
-							anglbuff -= 2.0;
-						}
-						else if (-20.0 > anglcalbuff) {
-							anglbuff -= 1.0;
-						}
-						else if (-10.0 > anglcalbuff) {
-							anglbuff -= 0.25;
-						}
-						else if (-5.0 > anglcalbuff) {
-							anglbuff -= 0.1;
-						}
-						else if (-1.0 > anglcalbuff) {
-							anglbuff -= 0.05;
-						}
-						else {
-							anglbuff -= 0.01;
-						}
+			anglbuff = atan2(ybuff , xbuff) * 180 / PI;
 
-					}
-				}
-				
-			}
-			else {
-				anglcalbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1)) - anglbuff;
-				if (anglcalbuff > 0) {
-					if (0.05 > anglcalbuff) {
-						anglbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1));
-					}
-					else {
-
-						if (50.0 < anglcalbuff) {
-							anglbuff += 2.0;
-						}
-						else if (20.0 < anglcalbuff) {
-							anglbuff += 1.0;
-						}
-						else if (10.0 < anglcalbuff) {
-							anglbuff += 0.25;
-						}
-						else if (5.0 < anglcalbuff) {
-							anglbuff += 0.1;
-						}
-						else if (1.0 < anglcalbuff) {
-							anglbuff += 0.05;
-						}
-						else {
-							anglbuff += 0.01;
-						}
-
-					}
-				}
-				else if (anglcalbuff < 0) {
-					if (-0.05 < anglcalbuff) {
-						anglbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1));
-					}
-					else {
-
-						if (-50.0 > anglcalbuff) {
-							anglbuff -= 2.0;
-						}
-						else if (-20.0 > anglcalbuff) {
-							anglbuff -= 1.0;
-						}
-						else if (-10.0 > anglcalbuff) {
-							anglbuff -= 0.25;
-						}
-						else if (-5.0 > anglcalbuff) {
-							anglbuff -= 0.1;
-						}
-						else if (-1.0 > anglcalbuff) {
-							anglbuff -= 0.05;
-						}
-						else {
-							anglbuff -= 0.01;
-						}
-					}
-				}
+			if (anglbuff < 0){
+				anglbuff = 360 + anglbuff;
 			}
 
-			langebuff = DEF_POS_SET_BASE * (5 / ((deps * 0.5) + 1.0 - ((int)(anglbuff / 360) / 50.0)));
+			xbuff = posbuff.x - pos.x;
+			ybuff = posbuff.y - pos.y;
+			langebuff = sqrt((xbuff * xbuff) + (ybuff * ybuff));
 
+			if (dkb.GetKeySt(KEY_W) == 1 || Get_Distflag() == 0) {
+
+				if (hostid == 0) {
+					anglcalbuff = (360.0 / connectcount * sortid) - anglbuff;
+					if (anglcalbuff > 0) {
+						if (0.05 > anglcalbuff) {
+							anglbuff = (360.0 / connectcount * sortid);
+						}
+						else {
+
+							if (50.0 < anglcalbuff) {
+								anglbuff += 2.0;
+							}
+							else if (20.0 < anglcalbuff) {
+								anglbuff += 1.0;
+							}
+							else if (10.0 < anglcalbuff) {
+								anglbuff += 0.25;
+							}
+							else if (5.0 < anglcalbuff) {
+								anglbuff += 0.1;
+							}
+							else if (1.0 < anglcalbuff) {
+								anglbuff += 0.05;
+							}
+							else {
+								anglbuff += 0.01;
+							}
+
+						}
+
+					}
+					else if (anglcalbuff < 0) {
+						if (-0.05 < anglcalbuff) {
+							anglbuff = (360.0 / connectcount * sortid);
+						}
+						else {
+
+							if (-50.0 > anglcalbuff) {
+								anglbuff -= 2.0;
+							}
+							else if (-20.0 > anglcalbuff) {
+								anglbuff -= 1.0;
+							}
+							else if (-10.0 > anglcalbuff) {
+								anglbuff -= 0.25;
+							}
+							else if (-5.0 > anglcalbuff) {
+								anglbuff -= 0.1;
+							}
+							else if (-1.0 > anglcalbuff) {
+								anglbuff -= 0.05;
+							}
+							else {
+								anglbuff -= 0.01;
+							}
+
+						}
+					}
+
+				}
+				else {
+					anglcalbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1)) - anglbuff;
+					if (anglcalbuff > 0) {
+						if (0.05 > anglcalbuff) {
+							anglbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1));
+						}
+						else {
+
+							if (50.0 < anglcalbuff) {
+								anglbuff += 2.0;
+							}
+							else if (20.0 < anglcalbuff) {
+								anglbuff += 1.0;
+							}
+							else if (10.0 < anglcalbuff) {
+								anglbuff += 0.25;
+							}
+							else if (5.0 < anglcalbuff) {
+								anglbuff += 0.1;
+							}
+							else if (1.0 < anglcalbuff) {
+								anglbuff += 0.05;
+							}
+							else {
+								anglbuff += 0.01;
+							}
+
+						}
+					}
+					else if (anglcalbuff < 0) {
+						if (-0.05 < anglcalbuff) {
+							anglbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1));
+						}
+						else {
+
+							if (-50.0 > anglcalbuff) {
+								anglbuff -= 2.0;
+							}
+							else if (-20.0 > anglcalbuff) {
+								anglbuff -= 1.0;
+							}
+							else if (-10.0 > anglcalbuff) {
+								anglbuff -= 0.25;
+							}
+							else if (-5.0 > anglcalbuff) {
+								anglbuff -= 0.1;
+							}
+							else if (-1.0 > anglcalbuff) {
+								anglbuff -= 0.05;
+							}
+							else {
+								anglbuff -= 0.01;
+							}
+						}
+					}
+				}
+
+				lagnecalbuff = DEF_POS_SET_BASE * (5 / ((deps * 0.5) + 1.0 - ((int)(anglbuff / 360) / 50.0)));
+				if (langebuff < lagnecalbuff) {
+					if (lagnecalbuff - langebuff < 0.05) {
+						langebuff = lagnecalbuff;
+					}
+					else {
+						langebuff += 0.05;
+						if (lagnecalbuff - langebuff > 0.5) {
+							langebuff += 0.1;
+						}
+
+						if (lagnecalbuff - langebuff > 2.5) {
+							langebuff += 0.5;
+						}
+
+						if (lagnecalbuff - langebuff > 5.0) {
+							langebuff += 1.0;
+						}
+
+						if (lagnecalbuff - langebuff > 50.0) {
+							langebuff += 10.0;
+						}
+
+						if (lagnecalbuff - langebuff > 500.0) {
+							langebuff += 100.0;
+						}
+
+						if (lagnecalbuff - langebuff > 2500.0) {
+							langebuff += 500.0;
+						}
+
+					}
+				}
+				else if (langebuff > lagnecalbuff) {
+					if (lagnecalbuff - langebuff > -0.05) {
+						langebuff = lagnecalbuff;
+					}
+					else {
+						langebuff -= 0.05;
+						if (lagnecalbuff - langebuff < -0.5) {
+							langebuff -= 0.1;
+						}
+
+						if (lagnecalbuff - langebuff < -2.5) {
+							langebuff -= 0.5;
+						}
+
+						if (lagnecalbuff - langebuff < -5.0) {
+							langebuff -= 1.0;
+						}
+
+						if (lagnecalbuff - langebuff < -50.0) {
+							langebuff -= 10.0;
+						}
+
+						if (lagnecalbuff - langebuff < -500.0) {
+							langebuff -= 100.0;
+						}
+
+
+						if (lagnecalbuff - langebuff < -2500.0) {
+							langebuff -= 500.0;
+						}
+
+					}
+				}
+				else {
+					langebuff = lagnecalbuff;
+				}
+
+				Set_Distflag(0);
+			}
 			posbuff.x = pos.x + (langebuff * cos(anglbuff * PI / 180.0));
 			posbuff.y = pos.y + (langebuff * sin(anglbuff * PI / 180.0));
 			posbuff.z = 0;
 
 		}
 		else {
-			if (connectcount == 1) {
-				anglbuff = angl;
+
+
+			xbuff = posbuff.x - pos.x;
+			ybuff = posbuff.y - pos.y;
+
+			anglbuff = atan2(ybuff, xbuff) * 180 / PI;
+
+			if(anglbuff < 0){
+				anglbuff = 360 + anglbuff;
 			}
-			else {
-				anglcalbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90 - anglbuff;
-				if (anglcalbuff > 0) {
-					if (0.05 > anglcalbuff) {
-						anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
-					}
-					else{
-						
-						if (50.0 < anglcalbuff) {
-							anglbuff += 2.0;
-						}
-						else if (20.0 < anglcalbuff) {
-							anglbuff += 1.0;
-						}
-						else if (10.0 < anglcalbuff) {
-							anglbuff += 0.25;
-						}
-						else if (5.0 < anglcalbuff) {
-							anglbuff += 0.1;
-						}
-						else if (1.0 < anglcalbuff) {
-							anglbuff += 0.05;
+			
+
+
+			langebuff = sqrt((xbuff * xbuff) + (ybuff * ybuff));
+
+			if (dkb.GetKeySt(KEY_W) == 1 || Get_Distflag() == 0) {
+
+				if (connectcount == 1) {
+					anglcalbuff = angl;
+
+					if (anglcalbuff > 0) {
+						if (0.05 > anglcalbuff) {
+							anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
 						}
 						else {
-							anglbuff += 0.01;
-						}
 
+							if (50.0 < anglcalbuff) {
+								anglbuff += 2.0;
+							}
+							else if (20.0 < anglcalbuff) {
+								anglbuff += 1.0;
+							}
+							else if (10.0 < anglcalbuff) {
+								anglbuff += 0.25;
+							}
+							else if (5.0 < anglcalbuff) {
+								anglbuff += 0.1;
+							}
+							else if (1.0 < anglcalbuff) {
+								anglbuff += 0.05;
+							}
+							else {
+								anglbuff += 0.01;
+							}
+
+						}
+					}
+					else if (anglcalbuff < 0) {
+						if (-0.05 < anglcalbuff) {
+							anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
+						}
+						else {
+
+							if (-50.0 > anglcalbuff) {
+								anglbuff -= 2.0;
+							}
+							else if (-20.0 > anglcalbuff) {
+								anglbuff -= 1.0;
+							}
+							else if (-10.0 > anglcalbuff) {
+								anglbuff -= 0.25;
+							}
+							else if (-5.0 > anglcalbuff) {
+								anglbuff -= 0.1;
+							}
+							else if (-1.0 > anglcalbuff) {
+								anglbuff -= 0.05;
+							}
+							else {
+								anglbuff -= 0.01;
+							}
+
+						}
 					}
 				}
-				else if (anglcalbuff < 0) {
-					if (-0.05 < anglcalbuff) {
-						anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
+				else {
+					anglcalbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90 - anglbuff;
+					if (anglcalbuff > 0) {
+						if (0.05 > anglcalbuff) {
+							anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
+						}
+						else {
+
+							if (50.0 < anglcalbuff) {
+								anglbuff += 2.0;
+							}
+							else if (20.0 < anglcalbuff) {
+								anglbuff += 1.0;
+							}
+							else if (10.0 < anglcalbuff) {
+								anglbuff += 0.25;
+							}
+							else if (5.0 < anglcalbuff) {
+								anglbuff += 0.1;
+							}
+							else if (1.0 < anglcalbuff) {
+								anglbuff += 0.05;
+							}
+							else {
+								anglbuff += 0.01;
+							}
+
+						}
+					}
+					else if (anglcalbuff < 0) {
+						if (-0.05 < anglcalbuff) {
+							anglbuff = (180.0 / (connectcount + 1) * (sortid + 1)) + angl - 90;
+						}
+						else {
+
+							if (-50.0 > anglcalbuff) {
+								anglbuff -= 2.0;
+							}
+							else if (-20.0 > anglcalbuff) {
+								anglbuff -= 1.0;
+							}
+							else if (-10.0 > anglcalbuff) {
+								anglbuff -= 0.25;
+							}
+							else if (-5.0 > anglcalbuff) {
+								anglbuff -= 0.1;
+							}
+							else if (-1.0 > anglcalbuff) {
+								anglbuff -= 0.05;
+							}
+							else {
+								anglbuff -= 0.01;
+							}
+
+						}
+					}
+				}
+
+				lagnecalbuff = DEF_POS_SET_BASE * (5 / ((deps * 0.5) + 1.0));
+				if (langebuff < lagnecalbuff) {
+					if (lagnecalbuff - langebuff < 0.05) {
+						langebuff = lagnecalbuff;
 					}
 					else {
+						langebuff += 0.05;
+						if (lagnecalbuff - langebuff > 0.5) {
+							langebuff += 0.1;
+						}
 
-						if (-50.0 > anglcalbuff) {
-							anglbuff -= 2.0;
+						if (lagnecalbuff - langebuff > 2.5) {
+							langebuff += 0.5;
 						}
-						else if (-20.0 > anglcalbuff) {
-							anglbuff -= 1.0;
+
+						if (lagnecalbuff - langebuff > 5.0) {
+							langebuff += 1.0;
 						}
-						else if (-10.0 > anglcalbuff) {
-							anglbuff -= 0.25;
+
+						if (lagnecalbuff - langebuff > 50.0) {
+							langebuff += 10.0;
 						}
-						else if (-5.0 > anglcalbuff) {
-							anglbuff -= 0.1;
+
+						if (lagnecalbuff - langebuff > 500.0) {
+							langebuff += 100.0;
 						}
-						else if (-1.0 > anglcalbuff) {
-							anglbuff -= 0.05;
-						}
-						else {
-							anglbuff -= 0.01;
+
+						if (lagnecalbuff - langebuff > 2500.0) {
+							langebuff += 500.0;
 						}
 
 					}
 				}
-			}
+				else if (langebuff > lagnecalbuff) {
+					if (lagnecalbuff - langebuff > -0.05) {
+						langebuff = lagnecalbuff;
+					}
+					else {
+						langebuff -= 0.05;
+						if (lagnecalbuff - langebuff < -0.5) {
+							langebuff -= 0.1;
+						}
 
-			langebuff = DEF_POS_SET_BASE * (5 / ((deps * 0.5) + 1.0));
+						if (lagnecalbuff - langebuff < -2.5) {
+							langebuff -= 0.5;
+						}
+
+						if (lagnecalbuff - langebuff < -5.0) {
+							langebuff -= 1.0;
+						}
+
+						if (lagnecalbuff - langebuff < -50.0) {
+							langebuff -= 10.0;
+						}
+
+						if (lagnecalbuff - langebuff < -500.0) {
+							langebuff -= 100.0;
+						}
+
+
+						if (lagnecalbuff - langebuff < -2500.0) {
+							langebuff -= 500.0;
+						}
+
+					}
+				}
+				else {
+					langebuff = lagnecalbuff;
+				}
+
+				Set_Distflag(0);
+			}
 
 			posbuff.x = pos.x + (langebuff * cos(anglbuff * PI / 180.0));
 			posbuff.y = pos.y + (langebuff * sin(anglbuff * PI / 180.0));
@@ -1050,7 +1374,7 @@ void MarkerMasterclass::remove(){
 }
 
 void MarkerMasterclass::datafree() {
-	for (int i = 0; i < usecount; i++) {
+	for (unsigned int i = 0; i < usecount; i++) {
 		data[i].Free_Packsize();
 	}
 
@@ -1064,6 +1388,8 @@ void MarkerMasterclass::datafree() {
 	}
 	removebuff = NULL;
 }
+
+unsigned int markermovebuff = -1;
 
 void MarkerMasterclass::move() {
 	Pos posbuff;
@@ -1097,7 +1423,7 @@ void MarkerMasterclass::move() {
 	}
 
 
-	for (int i = 0; i < usecount; i++) {
+	for (unsigned int i = 0; i < usecount; i++) {
 		hostidbuff = data[i].Get_Hostid();
 		if (hostidbuff == -1) hostidbuff = 0;
 		connectcountbuff = data[hostidbuff].Get_Connectcount();
@@ -1136,6 +1462,25 @@ void MarkerMasterclass::move() {
 		if (dms.pos.x >= (data[i].Get_ViewPos().x * viewx) + frontx - (((DEF_MARKER_GSIZE / 2) - 0) * (data[i].Get_Size() * data[i].Get_PSize() * viewx)) && dms.pos.x <= (data[i].Get_ViewPos().x * viewx) + frontx + (((DEF_MARKER_GSIZE / 2) - 0) * (data[i].Get_Size() * data[i].Get_PSize() * viewx))
 			&& dms.pos.y >= (data[i].Get_ViewPos().y * viewx) + fronty - (((DEF_MARKER_GSIZE / 2) - 0) * (data[i].Get_Size() * data[i].Get_PSize() * viewx)) && dms.pos.y <= (data[i].Get_ViewPos().y * viewx) + fronty + (((DEF_MARKER_GSIZE / 2) - 0) * (data[i].Get_Size() * data[i].Get_PSize() * viewx))) {
 			viewpopupid = i;
+
+			if (mouseleft == 1) {
+				markermovebuff = i;
+			}
+		}
+
+		if (i == markermovebuff) {
+
+			posbuff.x = ((dms.pos.x / viewx) - (frontx / viewx)) - frontpos.x;
+			posbuff.y = ((dms.pos.y / viewx) - (fronty / viewx)) - frontpos.y;
+			posbuff.z = 0;
+
+			data[i].Set_Pos(posbuff);
+
+			if (mouseleft == 0) {
+				markermovebuff = -1;
+			}
+
+			data[i].Set_Distflag(1);
 		}
 
 	}
@@ -1301,7 +1646,7 @@ void LineMasterclass::remove() {
 }
 
 void LineMasterclass::datafree() {
-	for (int i = 0; i < usecount; i++) {
+	for (unsigned int i = 0; i < usecount; i++) {
 		data[i].Free_Packsize();
 	}
 
@@ -1451,7 +1796,7 @@ void PacketMasterclass::remove() {
 	unsigned int removecount = 0;
 	unsigned int useremovecount = 0;
 	unsigned int usecountbuff = 0;
-	for (int i = 0; i < usecount; i++) {
+	for (unsigned int i = 0; i < usecount; i++) {
 		if (data[i].Get_Anmflag() == -1) {
 			removebuff[removecount] = i;
 			removecount++;

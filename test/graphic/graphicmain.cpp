@@ -595,7 +595,7 @@ void changeViewx() {
 	gstr.Stringset(20, 60, 18, 24, 0, 0, 6, 0xFF000000 + skinset.SRGB, 0, _T("viewx : %5.3lf"), viewx);
 	gstr.Stringset(20, 85, 18, 24, 0, 0, 6, 0xFF000000 + skinset.SRGB, 0, _T("vbuffx : %5.3lf"), vxbuff);
 	gstr.Stringset(20, 110, 18, 24, 0, 0, 6, 0xFF000000 + skinset.SRGB, 0, _T("newcount : %d"), pdata.newdatacount);
-
+	gstr.Stringset(20, 135, 18, 24, 0, 0, 6, 0xFF000000 + skinset.SRGB, 0, _T("front x : %5.3lf y : %5.3lf"), frontpos.x, frontpos.y);
 #endif
 }
 
