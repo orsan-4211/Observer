@@ -1,4 +1,5 @@
 #include <WindowsX.h>
+
 #include <tchar.h>
 #include <crtdbg.h>
 #include <time.h>
@@ -637,6 +638,7 @@ void setscreentex() {
 	dxg.RenderTargetSet(1, screentex.rtview, screentex.dsview, colf, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f);
 
 	
+	 
 }
 
 void setareatex() {

@@ -11,6 +11,8 @@
 #include <WS2tcpip.h>
 #include <IPHlpApi.h>
 
+#include <Windows.h>
+#include <imm.h>
 
 #include "./DirectX/lib/DX3D_11.h"
 #include "./DirectX/lib/Grstr.h"

@@ -385,6 +385,13 @@ void Markerclass::Move(Pos pos, double angl, int connectcount, int centerf) {
 				}
 				else {
 					anglcalbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1)) - anglbuff;
+					if (anglcalbuff > 360) {
+						anglcalbuff -= 360 * (int)(anglcalbuff / 360);
+					}
+
+					if (anglcalbuff < -360) {
+						anglcalbuff += 360 * (int)(anglcalbuff / -360);
+					}
 					if (anglcalbuff > 0) {
 						if (0.05 > anglcalbuff) {
 							anglbuff = (angl + 180) + (360.0 / (connectcount + 1) * (sortid + 1));
@@ -536,7 +543,7 @@ void Markerclass::Move(Pos pos, double angl, int connectcount, int centerf) {
 			if (dkb.GetKeySt(KEY_W) == 1 || Get_Distflag() == 0) {
 
 				if (connectcount == 1) {
-					anglcalbuff = angl;
+					anglcalbuff = angl - anglbuff;
 
 					if (anglcalbuff > 0) {
 						if (0.05 > anglcalbuff) {
