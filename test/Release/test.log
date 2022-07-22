@@ -1,4 +1,30 @@
-﻿  graphicmain.cpp
+﻿  defaultskin.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  graphicmain.cpp
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
@@ -306,6 +332,35 @@ graphic\graphicmain.cpp(1773): warning C4244: '=': 'double' から 'float' へ�
 graphic\graphicmain.cpp(1774): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 graphic\graphicmain.cpp(1775): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 graphic\graphicmain.cpp(1776): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  skinmanager.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\ookubo\Documents\GitHub\Observer\test\Include\../graphic/visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\ookubo\Documents\GitHub\Observer\test\Include\../graphic/visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+C:\Users\ookubo\Documents\GitHub\Observer\test\Include\../graphic/visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
   visobj.cpp
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
@@ -402,6 +457,32 @@ graphic\visobj.cpp(1932): warning C4244: '引数': 'unsigned __int64' から 'lo
 graphic\visobj.cpp(1990): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 graphic\visobj.cpp(1991): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 graphic\visobj.cpp(1840): warning C4101: 'debptextc': ローカル変数は 1 度も使われていません。
+  keyinput.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   main.cpp
   C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
@@ -460,6 +541,413 @@ main.cpp(155): warning C4007: 'WinMain': '__stdcall' でなければなりませ
 main.cpp(223): warning C4244: '=': 'LONG' から 'short' への変換です。データが失われる可能性があります。
 main.cpp(224): warning C4244: '=': 'LONG' から 'short' への変換です。データが失われる可能性があります。
 main.cpp(503): warning C4244: '引数': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+  analysis.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(66): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(69): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(70): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(73): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(74): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(80): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(81): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(82): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(87): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(88): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(89): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(94): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(95): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(96): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(101): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(102): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(103): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(106): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(117): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(120): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(123): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(126): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(276): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(277): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(284): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(287): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(296): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(297): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(305): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(316): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(319): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(328): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(329): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(337): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(412): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(413): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(419): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(422): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(431): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(432): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(441): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(452): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(455): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(464): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(465): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(473): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(578): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(579): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(585): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(588): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(597): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(598): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(606): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(721): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(722): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(739): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(740): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(745): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(746): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(761): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(763): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\analysis.cpp(768): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(772): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(774): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(796): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(797): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(803): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(804): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(808): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(809): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(821): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+pcap\analysis.cpp(822): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  packet.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(66): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(69): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(70): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(73): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(74): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(80): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(81): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(82): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(87): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(88): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(89): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(94): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(95): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(96): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(101): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(102): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(103): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(106): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(117): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(120): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(123): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\../sidecharm/charmmain.h(126): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+pcap\packet.cpp(1602): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\packet.cpp(1799): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\packet.cpp(1802): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\packet.cpp(1803): warning C4804: '>': 演算中の 'bool' 型の使用方法が安全ではありません
+pcap\packet.cpp(1909): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\packet.cpp(1864): warning C4101: 'fp': ローカル変数は 1 度も使われていません。
+pcap\packet.cpp(1986): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+pcap\packet.cpp(1963): warning C4101: 'fp': ローカル変数は 1 度も使われていません。
+  setting.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  charmmain.cpp
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(87): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(96): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(98): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(343): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(361): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(415): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(475): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(477): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(479): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(488): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(496): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(498): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(500): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(514): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(527): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(529): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(531): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(545): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(613): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(618): warning C4244: '引数': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\./pcap/analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(61): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(62): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(65): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(66): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(69): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(70): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(73): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(74): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(80): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(81): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(82): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(87): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(88): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(89): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(94): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(95): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(96): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(101): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(102): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(103): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(106): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(117): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(120): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(123): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(126): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(66): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(67): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(121): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(137): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(153): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(229): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(230): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(256): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(257): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(286): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(287): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(308): warning C4244: '+=': 'double' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(318): warning C4244: '-=': 'double' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(174): warning C4101: 'sizebuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(330): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(333): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(334): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(351): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(388): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(631): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(632): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(628): warning C4101: 'sizebuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(668): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(669): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(696): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(665): warning C4101: 'sizebuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(741): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(742): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(772): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(811): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(850): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(889): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(928): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(967): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1006): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1226): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1239): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1240): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1252): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1253): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1265): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1266): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1280): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1293): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1306): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1319): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1332): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1345): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1358): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1371): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1385): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1398): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1411): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1424): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1437): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1450): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1451): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1462): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1463): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1477): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1490): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1503): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1516): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1529): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1542): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1543): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1554): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1555): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1569): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1582): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1595): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1608): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1621): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1634): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1647): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1660): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1674): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1687): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1700): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1713): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1726): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1739): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1740): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1751): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1752): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1765): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1778): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1791): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1804): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1817): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1830): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1831): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1842): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1843): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1855): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1868): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1881): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1894): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1895): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1907): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1908): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+sidecharm\charmmain.cpp(1920): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1934): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1947): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1960): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(1973): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2002): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2190): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2191): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2236): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2262): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2289): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2312): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2352): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2392): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2432): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2472): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2526): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2539): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2553): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2566): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2579): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2592): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2605): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2618): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2631): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2661): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2727): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2743): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2782): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2845): warning C4244: '=': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2935): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2936): warning C4244: '=': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2981): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3006): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3033): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3058): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3083): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3106): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3139): warning C4838: 'unsigned __int64' から 'int' への変換には縮小変換が必要です
+sidecharm\charmmain.cpp(3139): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3155): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(2894): warning C4101: 'strposbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(2896): warning C4101: 'datacalledbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(2898): warning C4101: 'datacalbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(2899): warning C4101: 'selidbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(2892): warning C4101: 'sizebuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3258): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3296): warning C4244: '=': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3309): warning C4101: 'datacalledbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3311): warning C4101: 'datacalbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3312): warning C4101: 'selidbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3314): warning C4101: 'charmleftposbuf': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3401): warning C4244: '引数': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
+sidecharm\charmmain.cpp(3461): warning C4101: 'datacalledbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3463): warning C4101: 'datacalbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3464): warning C4101: 'selidbuff': ローカル変数は 1 度も使われていません。
+sidecharm\charmmain.cpp(3466): warning C4101: 'charmleftposbuf': ローカル変数は 1 度も使われていません。
   コードを生成中...
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(149): warning C4715: 'Timeclass::GetMoveTime': 値を返さないコントロール パスがあります。
   LINK : /LTCG が指定されましたが、コードの生成は必要ありません。リンク コマンド ラインから /LTCG を削除し、リンカーの性能を改善してください。

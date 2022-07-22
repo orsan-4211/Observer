@@ -1551,7 +1551,7 @@ void PacDevSet() {
 		}
 	} while (alldevs == NULL);
 
-	for (d = alldevs; d->next != NULL; d = d->next) {
+	for (d = alldevs; d != NULL; d = d->next) {
 
 		sprintf_s(textc, "%d. %s\n", ++handlemaxi, d->name);
 #if _DEBUG

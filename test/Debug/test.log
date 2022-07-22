@@ -1,6 +1,5 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (sotsuken.vcxproj, test.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  main.cpp
-  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  packet.cpp
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(44): warning C4244: '=': 'time_t' から 'DWORD' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(65): warning C4477: 'sprintf_s' : 書式文字列 '%u' には、型 'unsigned int' の引数が必要ですが、可変個引数 2 は型 'unsigned __int64' です
   c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(65): note: 書式文字列に '%llu' を使用することをお勧めします
@@ -37,6 +36,7 @@ c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(618): warning C42
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(636): warning C4244: '初期化中': 'unsigned __int64' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(664): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 c:\users\ookubo\documents\github\observer\test\pcap\analysis.h(680): warning C4244: 'return': 'unsigned __int64' から 'DWORD' への変換です。データが失われる可能性があります。
+  c:\program files (x86)\windows kits\8.1\include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
 c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(526): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(530): warning C4244: 'return': 'unsigned __int64' から 'long' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\graphic\visobj.h(817): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
@@ -65,9 +65,17 @@ c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(117): warni
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(120): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(123): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
 c:\users\ookubo\documents\github\observer\test\sidecharm\charmmain.h(126): warning C4244: 'return': 'double' から 'int' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\main.cpp(155): warning C4007: 'WinMain': '__stdcall' でなければなりません。
-c:\users\ookubo\documents\github\observer\test\main.cpp(223): warning C4244: '=': 'LONG' から 'short' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\main.cpp(224): warning C4244: '=': 'LONG' から 'short' への変換です。データが失われる可能性があります。
-c:\users\ookubo\documents\github\observer\test\main.cpp(503): warning C4244: '引数': 'LONG' から 'float' への変換です。データが失われる可能性があります。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1602): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1799): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1802): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1803): warning C4804: '>': 演算中の 'bool' 型の使用方法が安全ではありません
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1820): warning C4101: 'textc': ローカル変数は 1 度も使われていません。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1909): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1887): warning C4477: 'sprintf_s' : 書式文字列 '%d' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'unsigned __int64' です
+  c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1887): note: 書式文字列に '%lld' を使用することをお勧めします
+  c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1887): note: 書式文字列に '%I64d' を使用することをお勧めします
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1864): warning C4101: 'fp': ローカル変数は 1 度も使われていません。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1986): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\ookubo\documents\github\observer\test\pcap\packet.cpp(1963): warning C4101: 'fp': ローカル変数は 1 度も使われていません。
   test.vcxproj -> C:\Users\ookubo\Documents\GitHub\Observer\Debug\Observer.exe
   test.vcxproj -> C:\Users\ookubo\Documents\GitHub\Observer\Debug\Observer.pdb (Full PDB)
